@@ -14,7 +14,8 @@ function App() {
   }, [isDark]);
 
   const technologies = [
-    "React", "Javascript", "Typescript", "Tailwind Css", "Saas",
+       "React", "JS/TS", "Tailwind Css", "Saas","SEO"
+
   ];
 
   const projects = [
