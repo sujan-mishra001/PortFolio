@@ -59,7 +59,7 @@ function App() {
           className="text-center mb-16"
         >
           <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-blue-400 dark:to-purple-400 mb-4">
-            Suzan Mishra
+            Sujan Mishra
           </h1>
           <div className="inline-block bg-gradient-to-r from-gray-900 to-black dark:from-white dark:to-gray-200 text-white dark:text-gray-900 px-6 py-2 rounded-full mt-4 mb-6 shadow-lg">
             Front Developer
