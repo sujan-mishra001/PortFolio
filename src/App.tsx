@@ -14,25 +14,21 @@ function App() {
   }, [isDark]);
 
   const technologies = [
-       "React", "JS/TS", "Tailwind Css", "Saas","SEO"
-
+       "Python", "SQL", "Statistics", "Data Visualization",  "Machine Learning",
+       "NLP", "ETL Pipelines", "AWS", "Tableau", "Power BI", "Excel", "FeatureEngineering"
   ];
 
   const projects = [
+   
     {
-      title: "HealthNet",
-      description: "A Blood Donation application for making blood donation process easy and digitalized with proper folder managed for easier navigation of code.",
-      githubLink: "https://github.com/sujan-mishra001/healthnet", 
+      title: "House Price Prediction",
+      description: "Utilized Linear Regression, K-Nearest Neighbors (KNN), and Random Forest models. Applied advanced cross-validation techniques to optimize model performance.",
+      githubLink: "https://github.com/sujan-mishra001/", 
     },
-    {
-      title: "Vulearn",
-      description: "A self-paced web vulnerabilities learning platform with hands-on experience on simple vulnerabilities like SQLi, XSS, broken access control, etc.",
-      githubLink: "https://github.com/sujan-mishra001/Vulearn", 
-    },
-    {
-      title: "Blog",
-      description: "A user-friendly, self-paced blog application that allows users to create, manage, and publish posts while learning about web development.",
-      githubLink: "https://github.com/sujan-mishra001/bloge",
+     {
+      title: "Customer Loan Approval Prediction",
+      description: " Utilized Decision Tree and Random Forest classification models to predict loan approval based on customer profile data. Evaluated model performance using accuracy, precision, recall, and confusion matrix metrics to ensure robustness and reliability.",
+      githubLink: "https://github.com/sujan-mishra001/", 
     }
   ];
 
@@ -62,10 +58,10 @@ function App() {
             Sujan Mishra
           </h1>
           <div className="inline-block bg-gradient-to-r from-gray-900 to-black dark:from-white dark:to-gray-200 text-white dark:text-gray-900 px-6 py-2 rounded-full mt-4 mb-6 shadow-lg">
-            Front Developer
+            Aspiring Data Scientist
           </div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
-            Just a normal guy trying to build cool frontend applications using React.
+            Aspiring Data Scientist with a strong foundation in Python, SAS, R, SQL, and data visualization. Experienced in developing predictive models and collaborating with cross-functional teams to drive data-driven decision-making.
           </p>
         </motion.div>
 
@@ -78,11 +74,11 @@ function App() {
           <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-blue-400 dark:to-purple-400 mb-6">
             Technologies
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
             {technologies.map((tech, index) => (
               <motion.div
                 key={tech}
-                initial={{ opacity: 0, scale: 0.8 }}
+                initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.1 }}
                 className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-white to-gray-100 dark:from-gray-800 dark:to-gray-900 p-1 shadow-lg"
@@ -149,7 +145,7 @@ function App() {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="mailto:sujan48mishra@gmail.com"
+            href="mailto:sujanm9090@gmail.com"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 dark:from-blue-400 dark:to-purple-400 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <Mail size={20} />
@@ -183,7 +179,7 @@ function App() {
             <motion.a
               whileHover={{ scale: 1.1, y: -5 }}
               whileTap={{ scale: 0.9 }}
-              href="https://www.linkedin.com/in/sujan-mishra-743678356/"
+              href="https://www.linkedin.com/in/sujan-mishra90/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-blue-400 transition-colors duration-300"
