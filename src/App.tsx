@@ -14,51 +14,48 @@ function App() {
   }, [isDark]);
 
   const technologies = [
-       "Python", "SQL", "Statistics",  "Machine Learning",
-       "NLP", "ETL Pipelines", "AWS", "Data Visualization","Tableau", "Power BI"
+    "Python", "SQL", "Statistics", "Machine Learning",
+    "NLP", "ETL Pipelines", "AWS", "Data Visualization", "Tableau", "Power BI"
   ];
 
   const projects = [
-   
     {
       title: "House Price Prediction",
       description: "Utilized Linear Regression, K-Nearest Neighbors (KNN), and Random Forest models. Applied advanced cross-validation techniques to optimize model performance.",
-      githubLink: "https://github.com/sujan-mishra001/", 
+      githubLink: "https://github.com/sujan-mishra001/",
     },
-     {
+    {
       title: "Customer Loan Approval Prediction",
-      description: " Utilized Decision Tree and Random Forest classification models to predict loan approval based on customer profile data. Evaluated model performance using accuracy, precision, recall, and confusion matrix metrics to ensure robustness and reliability.",
-      githubLink: "https://github.com/sujan-mishra001/", 
+      description: "Utilized Decision Tree and Random Forest classification models to predict loan approval based on customer profile data. Evaluated model performance using accuracy, precision, recall, and confusion matrix metrics to ensure robustness and reliability.",
+      githubLink: "https://github.com/sujan-mishra001/",
     },
     {
       title: "Movie Recommendation System",
-description: " Utilized collaborative filtering with matrix factorization and cosine similarity to build a recommendation engine for suggesting movies based on user ratings and preferences. Developed a user-friendly Flask web interface for inputting preferences and displaying recommendations, integrated public datasets (e.g., MovieLens) with hyperparameter tuning for improved accuracy, and deployed the model with user feedback loops.",
-githubLink: "https://github.com/sujan-mishra001/"
+      description: "Utilized collaborative filtering with matrix factorization and cosine similarity to build a recommendation engine for suggesting movies based on user ratings and preferences. Developed a user-friendly Flask web interface for inputting preferences and displaying recommendations, integrated public datasets (e.g., MovieLens) with hyperparameter tuning for improved accuracy, and deployed the model with user feedback loops.",
+      githubLink: "https://github.com/sujan-mishra001/"
     },
     {
       title: "Hotel Sentiment Analysis",
-description: "Created an NLP-based tool to classify hotel review sentiments as positive, negative, or neutral, achieving 85% accuracy using Naive Bayes and LSTM models after preprocessing text with tokenization, stemming, and TF-IDF vectorization. Integrated the model into a dashboard for hotel managers with visualizations of word clouds and sentiment trends.",
-githubLink: "https://github.com/sujan-mishra001/"
+      description: "Created an NLP-based tool to classify hotel review sentiments as positive, negative, or neutral, achieving 85% accuracy using Naive Bayes and LSTM models after preprocessing text with tokenization, stemming, and TF-IDF vectorization. Integrated the model into a dashboard for hotel managers with visualizations of word clouds and sentiment trends.",
+      githubLink: "https://github.com/sujan-mishra001/"
     }
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
       <div className="container mx-auto px-4 py-12">
-    
+
+        {/* Dark Mode Toggle */}
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsDark(!isDark)}
           className="fixed top-4 right-4 p-3 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 dark:from-blue-600 dark:to-purple-600 shadow-lg transition-all duration-300"
         >
-          {isDark ? (
-            <Sun className="text-white" />
-          ) : (
-            <Moon className="text-white" />
-          )}
+          {isDark ? <Sun className="text-white" /> : <Moon className="text-white" />}
         </motion.button>
 
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -71,9 +68,11 @@ githubLink: "https://github.com/sujan-mishra001/"
             Aspiring Data Scientist
           </div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
-I am passionate about transforming data into actionable insights through Python, SQL, and advanced visualization tools. Skilled in building predictive models and NLP solutions, I thrive on collaboration and innovation to drive impactful, data-driven decisions. Explore my projects to see my journey in creating scalable, real-world solutions.     
+            I am passionate about transforming data into actionable insights through Python, SQL, and advanced visualization tools. Skilled in building predictive models and NLP solutions, I thrive on collaboration and innovation to drive impactful, data-driven decisions. Explore my projects to see my journey in creating scalable, real-world solutions.
           </p>
+        </motion.div>
 
+        {/* Technologies */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -103,6 +102,7 @@ I am passionate about transforming data into actionable insights through Python,
           </div>
         </motion.div>
 
+        {/* Projects */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -139,6 +139,7 @@ I am passionate about transforming data into actionable insights through Python,
           </div>
         </motion.div>
 
+        {/* Contact */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -162,6 +163,7 @@ I am passionate about transforming data into actionable insights through Python,
           </motion.a>
         </motion.div>
 
+        {/* Social Media */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -171,7 +173,6 @@ I am passionate about transforming data into actionable insights through Python,
           <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-blue-400 dark:to-purple-400 mb-4">
             Social Media
           </h2>
-        
           <div className="flex justify-center gap-8">
             <motion.a
               whileHover={{ scale: 1.1, y: -5 }}
@@ -206,13 +207,14 @@ I am passionate about transforming data into actionable insights through Python,
           </div>
         </motion.div>
 
-
-
+        {/* Footer */}
         <div className="text-center text-sm text-gray-500 dark:text-gray-400">
           © 2025 Sujan Mishra. All rights reserved.
         </div>
+
       </div>
     </div>
   );
+}
 
 export default App;
