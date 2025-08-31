@@ -214,6 +214,5 @@ I am passionate about transforming data into actionable insights through Python,
       </div>
     </div>
   );
-}
 
 export default App;
