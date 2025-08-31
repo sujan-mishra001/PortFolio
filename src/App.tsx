@@ -72,7 +72,7 @@ githubLink: "https://github.com/sujan-mishra001/"
           </div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
 I am passionate about transforming data into actionable insights through Python, SQL, and advanced visualization tools. Skilled in building predictive models and NLP solutions, I thrive on collaboration and innovation to drive impactful, data-driven decisions. Explore my projects to see my journey in creating scalable, real-world solutions.     
-          </motion.div>
+          </p>
 
         <motion.div
           initial={{ opacity: 0 }}
