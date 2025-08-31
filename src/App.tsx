@@ -14,8 +14,8 @@ function App() {
   }, [isDark]);
 
   const technologies = [
-       "Python", "SQL", "Statistics", "Data Visualization",  "Machine Learning",
-       "NLP", "ETL Pipelines", "AWS", "Tableau", "Power BI", "Excel", "FeatureEngineering"
+       "Python", "SQL", "Statistics",  "Machine Learning",
+       "NLP", "ETL Pipelines", "AWS", "Data Visualization","Tableau", "Power BI"
   ];
 
   const projects = [
@@ -29,6 +29,16 @@ function App() {
       title: "Customer Loan Approval Prediction",
       description: " Utilized Decision Tree and Random Forest classification models to predict loan approval based on customer profile data. Evaluated model performance using accuracy, precision, recall, and confusion matrix metrics to ensure robustness and reliability.",
       githubLink: "https://github.com/sujan-mishra001/", 
+    },
+    {
+      title: "Movie Recommendation System",
+description: " Utilized collaborative filtering with matrix factorization and cosine similarity to build a recommendation engine for suggesting movies based on user ratings and preferences. Developed a user-friendly Flask web interface for inputting preferences and displaying recommendations, integrated public datasets (e.g., MovieLens) with hyperparameter tuning for improved accuracy, and deployed the model with user feedback loops.",
+githubLink: "https://github.com/sujan-mishra001/"
+    },
+    {
+      title: "Hotel Sentiment Analysis",
+description: "Created an NLP-based tool to classify hotel review sentiments as positive, negative, or neutral, achieving 85% accuracy using Naive Bayes and LSTM models after preprocessing text with tokenization, stemming, and TF-IDF vectorization. Integrated the model into a dashboard for hotel managers with visualizations of word clouds and sentiment trends.",
+githubLink: "https://github.com/sujan-mishra001/"
     }
   ];
 
@@ -61,9 +71,8 @@ function App() {
             Aspiring Data Scientist
           </div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
-            Aspiring Data Scientist with a strong foundation in Python, SAS, R, SQL, and data visualization. Experienced in developing predictive models and collaborating with cross-functional teams to drive data-driven decision-making.
-          </p>
-        </motion.div>
+I am passionate about transforming data into actionable insights through Python, SQL, and advanced visualization tools. Skilled in building predictive models and NLP solutions, I thrive on collaboration and innovation to drive impactful, data-driven decisions. Explore my projects to see my journey in creating scalable, real-world solutions.     
+          </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}
@@ -162,9 +171,7 @@ function App() {
           <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-blue-400 dark:to-purple-400 mb-4">
             Social Media
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 mb-8 italic">
-            Too lazy to use social media, but you can find me here...
-          </p>
+        
           <div className="flex justify-center gap-8">
             <motion.a
               whileHover={{ scale: 1.1, y: -5 }}
